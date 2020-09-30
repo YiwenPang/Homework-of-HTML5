@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你不知道</title>
+    <style>
+        .main-menu{
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-menu li{
+            float: left;
+            list-style: none;
+            margin-left: 20px;
+            font-size: smaller;
+        }
+        .main-menu ul{
+            padding-left: 0px;
+        }
+        .main-menu>div:nth-child(2)>ul>li:nth-child(2){
+            margin-right: 20px;
+            background-color: blue;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: relative;
+            top: -5px;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+        }
+        .logo>img{
+            width: 270px;
+            height: 129px;
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+        }
+        .search>div:first-child{
+            width: 546px;
+            height: 44px;
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;
+            border-radius: 10px 0px 0px 10px;
+        }
+        .search>div:first-child>input{
+            width: 480px;
+            border: none;
+            outline: none;
+        }
+        .search>div:first-child>span{
+            margin-left: 25px;
+        }
+        .search>div:last-child{
+            background-color: blue;
+            color: white;
+            line-height: 44px;
+            padding: 0px 10px;
+            border-radius: 0px 10px 10px 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body>
+<div class="main-menu">
+    <div>
+        <ul>
+            <li><a href="http://news.baidu.com/">新闻</a></li>
+            <li><a href="https://www.hao123.com/">hao123</a></li>
+            <li><a href="https://map.baidu.com/">地图</a></li>
+            <li><a href="https://haokan.baidu.com/?sfrom=baidu-top">视频</a></li>
+            <li><a href="http://tieba.baidu.com/">贴吧</a></li>
+            <li><a href="http://xueshu.baidu.com/">学术</a> </li>
+            <li>更多</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>设置</li>
+            <li>登录</li>
+        </ul>
+    </div>
+</div>
+<div class="logo">
+    <img src="image/logo.png" alt="">
+</div>
+<div class="search">
+    <div>
+        <input type="text">
+        <span class="iconfont icon-camera"></span>
+    </div>
+    <div>百度一下</div>
+</div>
+</body>
+</html>

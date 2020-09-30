@@ -1,0 +1,26 @@
+.top{
+    width: 1000px;
+    height: 100px;
+    background: red;
+}
+.middle{
+    width: 1000px;
+    height: 100px;
+}
+.left{
+    width:500px;
+    height:100px;
+    background-color: green;
+    float: left;
+}
+.right{
+    width:500px;
+    height:100px;
+    background-color: yellow;
+    float:right;
+}
+.foot{
+    width:1000px;
+    height: 100px;
+    background-color: blue;
+}

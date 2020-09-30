@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="dist/bootstrap/css/bootstrap.css">
+		<style>
+			.my-top-menu{
+				background-color: #267dca;
+			}
+			.my-top-menu>nav>a>img{
+				width: 167px;
+				height: 22px;
+			}
+			.my-top-menu .navbar-expand-lg .navbar-collapse{
+				flex-direction: row-reverse;
+			}
+			.my-top-menu #navbarNavAltMarkup .navbar-nav a{
+				color: white;
+			}
+			.my-breadcrumb .breadcrumb{
+				background-color: #FFFFFF;
+			}
+			
+/* 			.my-ca{
+				padding-left: 0px;
+				padding-right: 0px;
+			} */
+			.my-ca li{
+				border-radius: 50%;
+				width: 10px;
+				height: 10px;
+			}
+
+			.my-product .row:nth-child(2) img{
+				width: 160px;
+				height: 160px;
+				background-color: #eeeeee;
+				border-radius: 50%;
+				margin-top: 30px;
+			}
+			.my-product .row:nth-child(2) span{
+				margin-top: 30px;
+			}
+			.my-product .row:nth-child(3)>span{
+				border: 1px solid blue;
+				padding: 10px 100px;
+				border-radius: 10px;
+				margin-top: 50px;
+				font-size: large;
+				color: blue;
+			}
+			.my-news-title{
+				color: blue;
+				font-size: 18px;
+			}
+			.my-news-date, .my-news-content{
+				font-size: 12px;
+			}
+			.my-news-date{
+				margin-bottom: 5px;
+			}
+			.my-news .list-group-item.active{
+				background-color: #eeeeee;
+				border-color: #eeeeee;
+				color: black;
+			}
+			.my-news>.row:first-child>.col-md-8>.container-fluid>.row{
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid my-top-menu">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand" href="#"><img src="imags/logo.png" ></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+							<a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="#">Features</a>
+							<a class="nav-link" href="#">Pricing</a>
+							<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+		</div>
+		<div class="container my-breadcrumb">
+			<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb mb-0 pt-0 pb-0">
+			    <li class="breadcrumb-item"><a href="#">Home</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">Library</li>
+			  </ol>
+			</nav>
+		</div>
+		<div class="container-fluid my-ca pl-0 pr-0">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="imags/1.jpg" class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="imags/2.jpg" class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="imags/3.jpg" class="d-block w-100" alt="...">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+		<div class="container my-product">
+			<div class="row justify-content-center">
+				<span class="h2 mt-5">企业产品</span>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="row flex-column align-items-center">
+						<img src="imags/200x200-yinqing.png" alt="">
+						<span class="h5">瑞星威胁检测引擎</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row flex-column align-items-center">
+						<img src="imags/200x200-yinqing.png" alt="">
+						<span class="h5">瑞星威胁检测引擎</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row flex-column align-items-center">
+						<img src="imags/200x200-yinqing.png" alt="">
+						<span class="h5">瑞星威胁检测引擎</span>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="row flex-column align-items-center">
+						<img src="imags/200x200-yinqing.png" alt="">
+						<span class="h5">瑞星威胁检测引擎</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row flex-column align-items-center">
+						<img src="imags/200x200-yinqing.png" alt="">
+						<span class="h5">瑞星威胁检测引擎</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row flex-column align-items-center">
+						<img src="imags/200x200-yinqing.png" alt="">
+						<span class="h5">瑞星威胁检测引擎</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<span>更多 <span style="font-weight: bolder">></span></span>
+			</div>
+		</div>
+
+		<div class="container my-news">
+			<div class="row">
+
+				<div class="col-md-8">
+					<div class="container-fluid ">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="imags/4196460.jpg" alt="" class="embed-responsive">
+							</div>
+							<div class="col-md-8">
+								<div class="row flex-column">
+									<span class="my-news-title">2020信息技术应用创新产品发展峰会召开 瑞星信创产品获奖</span>
+									<span class="my-news-date">2020-09-28  </span>
+									<span class="my-news-content">2020年9月28日，由中国电子信息产业发展研究院主办的“2020年信息技术应用创新产品发展峰会”在江苏省南通市举行，瑞星公司作为国内自主创新的网络安全企业参与了此次峰会，并且在会上，瑞星旗下瑞星ESM（下一代网络版——信创版）荣获信息技术应用创新优秀应用软件称号。</span>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="row" >
+							<div class="col-md-4">
+								<img src="imags/4196460.jpg" alt="" class="embed-responsive">
+							</div>
+							<div class="col-md-8">
+								<div class="row flex-column">
+									<span class="my-news-title">2020信息技术应用创新产品发展峰会召开 瑞星信创产品获奖</span>
+									<span class="my-news-date">2020-09-28  </span>
+									<span class="my-news-content">2020年9月28日，由中国电子信息产业发展研究院主办的“2020年信息技术应用创新产品发展峰会”在江苏省南通市举行，瑞星公司作为国内自主创新的网络安全企业参与了此次峰会，并且在会上，瑞星旗下瑞星ESM（下一代网络版——信创版）荣获信息技术应用创新优秀应用软件称号。</span>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+								<img src="imags/4196460.jpg" alt="" class="embed-responsive">
+							</div>
+							<div class="col-md-8">
+								<div class="row flex-column">
+									<span class="my-news-title">2020信息技术应用创新产品发展峰会召开 瑞星信创产品获奖</span>
+									<span class="my-news-date">2020-09-28  </span>
+									<span class="my-news-content">2020年9月28日，由中国电子信息产业发展研究院主办的“2020年信息技术应用创新产品发展峰会”在江苏省南通市举行，瑞星公司作为国内自主创新的网络安全企业参与了此次峰会，并且在会上，瑞星旗下瑞星ESM（下一代网络版——信创版）荣获信息技术应用创新优秀应用软件称号。</span>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+								<img src="imags/4196460.jpg" alt="" class="embed-responsive">
+							</div>
+							<div class="col-md-8">
+								<div class="row flex-column">
+									<span class="my-news-title">2020信息技术应用创新产品发展峰会召开 瑞星信创产品获奖</span>
+									<span class="my-news-date">2020-09-28  </span>
+									<span class="my-news-content">2020年9月28日，由中国电子信息产业发展研究院主办的“2020年信息技术应用创新产品发展峰会”在江苏省南通市举行，瑞星公司作为国内自主创新的网络安全企业参与了此次峰会，并且在会上，瑞星旗下瑞星ESM（下一代网络版——信创版）荣获信息技术应用创新优秀应用软件称号。</span>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="col-md-3 offset-md-1">
+					<ul class="list-group">
+						<li class="list-group-item active">Cras justo odio</li>
+						<li class="list-group-item">Dapibus ac facilisis in</li>
+						<li class="list-group-item">Morbi leo risus</li>
+						<li class="list-group-item">Porta ac consectetur ac</li>
+						<li class="list-group-item">Vestibulum at eros</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script src="dist/jquery.js"></script>
+	<script src="dist/popper.min.js"></script>
+	<script src="dist/bootstrap/js/bootstrap.js"></script>
+</html>
