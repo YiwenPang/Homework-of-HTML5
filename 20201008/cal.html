@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="number1">被加数</label>
+            <input type="text" class="form-control" id="number1">
+            <div></div>
+        </div>
+        <div class="form-group">
+            <label for="number2">加数</label>
+            <input type="text" class="form-control" id="number2">
+            <div></div>
+        </div>
+        <div class="form-group">
+            <input type="button" value="计算" id="mysubmit" class="btn btn-primary" onclick="myreg()">
+        </div>
+    </form>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script>
+    function myclear(mytag){
+        mytag.nextElementSibling.className="";
+        mytag.nextElementSibling.innerHTML="";
+    }
+
+    function myreg(){
+        let number1=document.getElementById("number1");
+        let number2=document.getElementById("number2");
+
+        let count1_txt=number1.value;
+        let count2_txt=number2.value;
+
+        if(count1_txt.length===0||count1_txt==null){
+            number1.nextElementSibling.className="alert alert-danger";
+            number1.nextElementSibling.innerHTML="被加数不能为空";
+        }else{
+            myclear(number1);
+        }
+
+        if(count2_txt.length===0||count2_txt==null){
+            number2.nextElementSibling.className="alert alert-danger";
+            number2.nextElementSibling.innerHTML="加数不能为空";
+        }else {
+            myclear(number2);
+        }
+
+        let answer=Number(count1_txt)+Number(count2_txt);
+        alert(count1_txt+"+"+count2_txt+"="+answer);
+    }
+</script>
+</html>
