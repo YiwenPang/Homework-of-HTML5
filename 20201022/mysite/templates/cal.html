@@ -1,0 +1,32 @@
+<!--这是一行版权信息，表明代码源来自庞怡文，任何未经允许以作业形式上传的人将会受到学校或法律的严厉惩罚-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+</head>
+<body>
+<div class="container">
+    <form action="/js/" method="post">
+        <div class="form-group">
+            <label for="number1">被加数</label>
+            <input type="text" class="form-control" name="number1">
+            <div></div>
+        </div>
+        <div class="form-group">
+            <label for="number2">加数</label>
+            <input type="text" class="form-control" name="number2">
+            <div></div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="计算" class="btn btn-primary">
+        </div>
+    </form>
+</div>
+<script src='{% static "jquery.js" %}'></script>
+<script src='{% static "popper.min.js" %}'></script>
+<script src='{% static "bootstrap/js/bootstrap.js" %}'></script>
+</body>
+</html>
