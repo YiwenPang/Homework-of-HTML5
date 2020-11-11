@@ -8,13 +8,10 @@ from login.models import Users
 
 def login(request):
     if request.session.get('id', None):
-        print("1")
         return  redirect('/login/index/')
     if request.method == "GET":
-        print("2")
         return render(request, 'login.html')
     else:
-        print("3")
         username = request.POST.get("username")
         password = request.POST.get("password")
         info = ""
@@ -24,14 +21,11 @@ def login(request):
         # print(res[0].id)
         # print(res[0].username)
         if res :
-            print("4")
             request.session['id'] = res[0].id
             request.session['username'] = res[0].username
             return redirect('/login/index/')
         else:
-            print("5")
             info = "登录失败！"
-        print("6")
         return render(request, 'temp.html', {"info": info})
 
 
@@ -65,3 +59,13 @@ def exit(request):
 
 def welcome(request):
     return render(request, 'welcome.html')
+
+
+def ajaxlogin(request):
+    username = request.POST.get("username")
+    password = request.POST.get("password")
+    res = Users.objects.filter(username=username, password=password)
+    if res:
+        return HttpResponse("1")
+    else:
+        return HttpResponse("0")
