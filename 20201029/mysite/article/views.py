@@ -1,9 +1,42 @@
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 
 # Create your views here.
+from article.models import Types, Articles
+
+
 def articlelist(request):
-    if request.session.get('id'):
-        return render(request,'article-list.html')
+    articles = Articles.objects.all()
+    return render(request, 'article-list.html', {'articles': articles})
+
+
+def articleadd(request):
+    if request.method == 'GET':
+        types = Types.objects.all()
+        print(types)
+        return render(request, 'article-add.html', {'types': types})
     else:
-        return redirect('/login/login/')
+        title = request.POST.get("title")
+        type = request.POST.get("type")
+        content = request.POST.get("content")
+        author = request.session.get("id")
+        article = Articles(title=title, content=content, type_id=type, author_id=author)
+        article.save()
+        return HttpResponse("文章添加成功！")
+
+
+def typeinit(request):
+    type = Types(title='国内新闻')
+    type.save()
+    type = Types(title='国际新闻')
+    type.save()
+    type = Types(title='财经新闻')
+    type.save()
+    return render(request, 'temp.html', {"info": "文章类型初始化完成！"})
+
+
+def articledel(request):
+    id = request.POST.get('id')
+    Articles.objects.filter(id=id)[0].delete()
+    return HttpResponse("1")
