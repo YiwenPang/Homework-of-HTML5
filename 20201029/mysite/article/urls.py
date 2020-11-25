@@ -21,5 +21,6 @@ urlpatterns = [
     path('articlelist/',views.articlelist),
     path('articleadd/',views.articleadd),
     path('typeinit/',views.typeinit),
-    path('articledel/',views.articledel)
+    path('articledel/',views.articledel),
+    path('articleedit/',views.articleedit)
 ]

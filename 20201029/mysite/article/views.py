@@ -40,3 +40,24 @@ def articledel(request):
     id = request.POST.get('id')
     Articles.objects.filter(id=id)[0].delete()
     return HttpResponse("1")
+
+
+def articleedit(request):
+    if request.method=='GET':
+        id=request.GET.get('id')
+        article=Articles.objects.filter(id=id)[0]
+        types=Types.objects.all()
+        return render(request,'article-edit.html',{'article':article,'types':types})
+    else:
+        title=request.POST.get("title")
+        type=request.POST.get("type")
+        content=request.POST.get("content")
+        id=request.POST.get("id")
+        author=request.session.get("id")
+        article=Articles.objects.filter(id=id)[0]
+        article.title=title
+        article.type_id=type
+        article.author_id=author
+        article.content=content
+        article.save()
+        return HttpResponse("修改成功！")
