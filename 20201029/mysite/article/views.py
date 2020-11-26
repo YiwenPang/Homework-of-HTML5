@@ -45,7 +45,7 @@ def articledel(request):
 def articleedit(request):
     if request.method=='GET':
         id=request.GET.get('id')
-        article=Articles.objects.filter(id=id)[0]
+        article = Articles.objects.filter(id=id)[0]
         types=Types.objects.all()
         return render(request,'article-edit.html',{'article':article,'types':types})
     else:

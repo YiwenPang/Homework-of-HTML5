@@ -13,7 +13,10 @@ class LoginMiddleware:
 
         urls = [
             '/login/login/',
-            '/login/ajaxlogin/'
+            '/login/ajaxlogin/',
+            '/front/',
+            '/front/types/',
+            '/front/articles/'
         ]
         if request.session.get('id') or request.path_info in urls:
             response = self.get_response(request)

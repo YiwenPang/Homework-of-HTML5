@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.css" %}">
+    <style>
+        .top {
+            height: 200px;
+            background-color: #00a0e9;
+            margin: 0px;
+        }
+
+        .top img {
+            height: 180px;
+            margin-top: 10px;
+        }
+
+        .copyright {
+            height: 30px;
+            background-color: grey;
+        }
+
+        #mynav li:first-child {
+            margin-left: 2px !important;
+        }
+    </style>
+</head>
+<body>
+<div class="row justify-content-center container-fluid top">
+    <img src="{% static "images/logo.png" %}" alt="">
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb" class="row justify-content-center">
+        <ol class="breadcrumb" id="mynav">
+            {% for type in types %}
+                <li class="ml-3"><a href="/front/types/?id={{ type.id }}">{{ type.title }}</a></li>
+            {% endfor %}
+        </ol>
+    </nav>
+</div>
+
+<div class="copyright">
+    <div class="row justify-content-center">
+        <span>庞怡文有部分代码的版权信息（当然框架还是从马老师那里改的哈哈哈哈哈哈哈哈哈）</span>
+    </div>
+
+</div>
+</body>
+<script src="{% static "jquery.js" %}s"></script>
+<script src="{% static "popper.min.js" %}"></script>
+<script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+</html>

@@ -8,7 +8,7 @@ from login.models import Users
 
 def login(request):
     if request.session.get('id', None):
-        return  redirect('/login/index/')
+        return redirect('/login/index/')
     if request.method == "GET":
         return render(request, 'login.html')
     else:
@@ -20,7 +20,7 @@ def login(request):
         res = Users.objects.filter(username=username, password=password)
         # print(res[0].id)
         # print(res[0].username)
-        if res :
+        if res:
             request.session['id'] = res[0].id
             request.session['username'] = res[0].username
             return redirect('/login/index/')
@@ -40,6 +40,7 @@ def init(request):
     except IntegrityError:
         return HttpResponse("用户名重复！")
     return HttpResponse("ok")
+
 
 # session
 def index(request):
