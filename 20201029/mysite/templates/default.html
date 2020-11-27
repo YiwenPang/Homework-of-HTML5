@@ -25,13 +25,20 @@
         #mynav li:first-child {
             margin-left: 2px !important;
         }
+
+        .setbg {
+            background: url("{% static "images/Explosion_4k.jpg" %}");
+            filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+            -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
     </style>
 </head>
 <body>
 <div class="row justify-content-center container-fluid top">
     <img src="{% static "images/logo.png" %}" alt="">
 </div>
-<div class="container">
+<div class="container-fluid setbg" style="height: 800px">
     <nav aria-label="breadcrumb" class="row justify-content-center">
         <ol class="breadcrumb" id="mynav">
             {% for type in types %}
@@ -40,15 +47,13 @@
         </ol>
     </nav>
 </div>
-
 <div class="copyright">
     <div class="row justify-content-center">
         <span>庞怡文有部分代码的版权信息（当然框架还是从马老师那里改的哈哈哈哈哈哈哈哈哈）</span>
     </div>
-
 </div>
 </body>
-<script src="{% static "jquery.js" %}s"></script>
+<script src="{% static "jquery.js" %}"></script>
 <script src="{% static "popper.min.js" %}"></script>
 <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
 </html>

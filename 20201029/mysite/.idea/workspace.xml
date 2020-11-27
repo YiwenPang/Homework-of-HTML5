@@ -20,24 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e514a3f2-c541-4ac2-a220-94564770316f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mysite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mysite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article-add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article-edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/temp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +55,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="JupyterTrust" id="fa76aebe-2cae-4783-8f61-a6c463336b75" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
   <component name="ProjectId" id="1jthTLV2YJZWuZ9FtS181NcCsK6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -88,16 +69,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\学校文件\学科文件\2020-2021年度大三\2020-2021年度大三上学期\网站设计与制作\Homework-of-HTML5\20201029\mysite\static\images" />
       <recent name="E:\学校文件\学科文件\2020-2021年度大三\2020-2021年度大三上学期\网站设计与制作\Homework-of-HTML5\20201029\mysite\static" />
       <recent name="E:\学校文件\学科文件\2020-2021年度大三\2020-2021年度大三上学期\网站设计与制作\Homework-of-HTML5\20201029\mysite\templates" />
       <recent name="E:\学校文件\学科文件\2020-2021年度大三\2020-2021年度大三上学期\网站设计与制作\Homework-of-HTML5\20201029\mysite\front" />
       <recent name="F:\学校文件\学科文件\2020-2021年度大三\2020-2021年度大三上学期\网站设计与制作\Homework-of-HTML5\20201029\mysite\templates" />
-      <recent name="F:\学校文件\学科文件\2020-2021年度大三\2020-2021年度大三上学期\网站设计与制作\Homework-of-HTML5\20201029\mysite\article" />
     </key>
   </component>
   <component name="RunManager">
@@ -157,6 +138,9 @@
       <workItem from="1606381517615" duration="1965000" />
       <workItem from="1606386722476" duration="117000" />
       <workItem from="1606386871430" duration="251000" />
+      <workItem from="1606448353055" duration="28000" />
+      <workItem from="1606448435840" duration="33000" />
+      <workItem from="1606450353355" duration="3280000" />
     </task>
     <servers />
   </component>
@@ -198,22 +182,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605846340083" />
-    <state width="1877" height="300" key="GridCell.Tab.0.bottom" timestamp="1606306813029">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1606453833201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606306813029" />
-    <state width="1877" height="300" key="GridCell.Tab.0.center" timestamp="1606306813029">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606453833201" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1606453833201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606306813029" />
-    <state width="1877" height="300" key="GridCell.Tab.0.left" timestamp="1606306813029">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606453833201" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1606453833201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606306813029" />
-    <state width="1877" height="300" key="GridCell.Tab.0.right" timestamp="1606306813029">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606453833201" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1606453833201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606306813029" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606453833201" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1604650663284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -230,10 +214,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604650663284" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1606386776146">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1606450379998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606386776146" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606450379998" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1604653116677">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
