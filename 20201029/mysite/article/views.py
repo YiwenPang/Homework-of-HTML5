@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
-
 # Create your views here.
 from article.models import Types, Articles
 
@@ -43,21 +42,21 @@ def articledel(request):
 
 
 def articleedit(request):
-    if request.method=='GET':
-        id=request.GET.get('id')
+    if request.method == 'GET':
+        id = request.GET.get('id')
         article = Articles.objects.filter(id=id)[0]
-        types=Types.objects.all()
-        return render(request,'article-edit.html',{'article':article,'types':types})
+        types = Types.objects.all()
+        return render(request, 'article-edit.html', {'article': article, 'types': types})
     else:
-        title=request.POST.get("title")
-        type=request.POST.get("type")
-        content=request.POST.get("content")
-        id=request.POST.get("id")
-        author=request.session.get("id")
-        article=Articles.objects.filter(id=id)[0]
-        article.title=title
-        article.type_id=type
-        article.author_id=author
-        article.content=content
+        title = request.POST.get("title")
+        type = request.POST.get("type")
+        content = request.POST.get("content")
+        id = request.POST.get("id")
+        author = request.session.get("id")
+        article = Articles.objects.filter(id=id)[0]
+        article.title = title
+        article.type_id = type
+        article.author_id = author
+        article.content = content
         article.save()
         return HttpResponse("修改成功！")
