@@ -1,11 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.css" %}">
 </head>
 <body>
-<h1>{{ article.title }}</h1>
-<div>{{ article.content | safe }}</div>
+<div class="jumbotron">
+    <h1 class="display-4">{{ article.title }}</h1>
+    <hr class="my-4">
+    <p>{{ article.content | safe }}</p>
+</div>
+<script src="{% static "jquery.js" %}"></script>
+<script src="{% static "popper.min.js" %}"></script>
+<script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
 </body>
 </html>

@@ -1,12 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.css" %}">
 </head>
 <body>
-{% for article in articles %}
-    <div><a href="/front/articles/?id={{ article.id }}">{{ article.title }}</a></div>
-{% endfor %}
+<div>
+    {% for article in articles %}
+        <a href="/front/articles/?id={{ article.id }}"
+           class="list-group-item list-group-item-action">{{ article.title }}</a>
+    {% endfor %}
+</div>
+<script src="{% static "jquery.js" %}"></script>
+<script src="{% static "popper.min.js" %}"></script>
+<script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
 </body>
 </html>
